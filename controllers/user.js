@@ -4,6 +4,7 @@ const { User } = require ("../models/user");
 module.exports = {
     //create user
     create: async(req, res) => {
+        console.log(req.body);
         try {
             //create user
             const newUser = new User(req.body);
@@ -13,9 +14,11 @@ module.exports = {
             if (user) {
                 res.send(user);
             } else {
-                res.send("user not saved");
+                console.log(123);
+                res.status(400).send("user not saved");
             }
         }catch (error) {
+            console.log(error);
             //send error
             res.status(400).send(error);
         }

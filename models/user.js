@@ -123,45 +123,45 @@ const userSchema = new mongoose.Schema({
   secondVaccination: {
     date: {
       type: Date,
-      required: true,
+      // required: true,
     },
     vaccine: {
       type: String,
-      required: true
+      // required: true
     },
   },
   thirdVaccination: {
     date: {
       type: Date,
-      required: true,
+      // required: true,
     },
     vaccine: {
       type: String,
-      required: true
+      // required: true
     },
   },
   fourthVaccination: {
     date: {
       type: Date,
-      required: true,
+      // required: true,
     },
     vaccine: {
       type: String,
-      required: true
+      // required: true
     },
   },
   positiveTest: {
     type: Date,
-    required: true,
+    // required: true,
   },
   recovery: {
     type: Date,
-    required: true,
+    // required: true,
   },
   image: {
     type: String,
     default: 'https://www.freeiconspng.com/uploads/no-image-icon-4.png',
-    required: true
+    // required: true
   },
   date: {
     type: Date,
